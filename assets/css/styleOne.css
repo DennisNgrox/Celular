@@ -16,6 +16,7 @@ body {
 
 .celular, .texto {
     margin-top: 30px;
+    margin-bottom: 40px;
     align-items: center;
     justify-content: center;
     color: white;
