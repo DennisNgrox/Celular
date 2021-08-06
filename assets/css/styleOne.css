@@ -1,0 +1,1078 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(74, 171, 216);
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.celular, .texto {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+.carcaca {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 400px;
+    border-radius: 30px;
+    border: solid 2px gray;
+}
+
+.camera {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+}
+
+.sensor {
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    margin: 5px auto;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.flashEsom {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.flash {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.som {
+    background-color: rgb(0, 0, 0);
+    width: 42px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 5px 15px
+}
+
+.tela {
+    background-color: black;
+    width: 93%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.botao {
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+button {
+    margin: 5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tela2 {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    transition: 3s;
+}
+
+.login p {
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#senha {
+    margin: 5px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.teclado {
+    margin: -2px auto 0 auto;
+    width: 100%;
+    height: 205px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teclado div {
+    background-color: rgba(151, 146, 146, 0.322);
+    margin: 1px auto;
+    width: 47px;
+    height: 46px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.teclado div p {
+    margin-top: 25%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cancelar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cancelar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10px;
+}
+
+#cancel, #clear {
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+@media only screen and (max-width: 520px) {
+    .celular, .texto {
+        width: auto;
+    }
+}
+
+.tela3 {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.imagem1 {
+    background-image: url("https://i.ibb.co/NT4YJBT/pe.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border: solid 1px black;
+}
+
+.horas {
+    width: 100%;
+    height: 15px;
+    display: flex;
+}
+
+.horas .signal {
+    margin: 3px;
+    width: 14px;
+    height: 10px;
+}
+
+.horas span {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3px 4px;
+    font-size: 10px;
+    color: black;
+}
+
+.horas .wifi {
+    margin: 5px 4px;
+    width: 13px;
+    height: 8px;
+}
+
+#hora-cons {
+    margin-left: 4px;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.relogio {
+    margin: 3px 0px 3px 20px;
+    width: 10px;
+    height: 10px;
+}
+
+.bateria {
+    margin-top: 2px;
+}
+
+.imagem2 {
+    margin: 10px 5px 0px 0px;
+    display: table-caption;
+}
+
+.imagem2 .config {
+    width: 45px;
+    cursor: pointer;
+}
+
+.imagem3 {
+    margin: 10px 5px 0px 0px;
+    display: table-caption;
+    width: 50px;
+    height: 50px;
+}
+
+.imagem3 .chat {
+    width: 45px;
+    cursor: pointer;
+}
+
+.imagem4 {
+    margin: 10px 5px 0px 0px;
+    display: table-caption;
+    width: 50px;
+    height: 50px;
+}
+
+.imagem4 .musicasz {
+    width: 45px;
+    cursor: pointer;
+}
+
+
+div.tela4 {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+div.tela4::-webkit-scrollbar {
+    width: 3px;
+    z-index: 100000;
+}
+
+div.tela4::-webkit-scrollbar-track {
+    background-color: $ {lighten(0.2, '#374248')};
+}
+
+div.tela4::-webkit-scrollbar-thumb {
+    background-color: #cccccc46;
+    border-radius: 5px;
+    height: 60px;
+}
+
+div.tela4::-webkit-scrollbar-button {
+    background-color: $ {lighten(0.2, '#374248')}; height: 5px;
+}
+
+div.tela4::-webkit-scrollbar-corner {
+    background-color: rgb(0, 0, 0);
+}
+
+.ajustes {
+    width: 100%;
+}
+
+.ajustes h1 {
+    margin: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.ajustes h4 {
+    font-weight: 500;
+}
+
+.imagemDoIcloud {
+    margin: 3px;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.imagemDoIcloud img {
+    height: 35px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.icloud {
+    background-color: rgba(44, 44, 44, 0.651);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    align-items: center;
+    border-top: solid 1px rgba(255, 255, 255, 0.144);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.199);
+    cursor: pointer;
+}
+
+.textConfig {
+    font-family: arial;
+    text-align: left;
+    color: white;
+    margin-left: 5px;
+}
+
+.textConfig p {
+    font-size: 7px;
+    font-weight: bold;
+    color: white;
+}
+
+.next {
+    margin-left: 10px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.192);
+}
+
+.primeirasOption, .segundaOption, .terceiraOption {
+    background-color: rgba(44, 44, 44, 0.651);
+    margin-top: 20px;
+    border-top: solid 1px rgba(255, 255, 255, 0.144);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.199);
+}
+
+.primeirasOption li, .segundaOption li, .terceiraOption li {
+    margin-left: 15px;
+    list-style: none;
+    text-align: left;
+}
+
+.primeirasOption a, .segundaOption a, .terceiraOption a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.062);
+    display: block;
+}
+
+.primeirasOption div:hover, .segundaOption div:hover, .terceiraOption div:hover {
+    background-color: rgba(128, 128, 128, 0.13);
+    width: 100%;
+}
+
+.icloud:hover, .mensagens:hover {
+    background-color: rgba(146, 139, 139, 0.281);
+}
+
+.menuIcones {
+    margin-top: 181px;
+    height: 45px;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: flex;
+}
+
+.menuIcones div {
+    max-width: 46px;
+    width: 43px !important;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menuIcones #whatsapp {
+    max-width: 46px;
+    width: 43px !important;
+    height: 40px;
+    margin-top: 2px;
+    justify-content: center;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.menuIcones #telephone {
+    max-width: 46px;
+    width: 43px !important;
+    height: 40px;
+    margin-left: 3px;
+    margin-top: 2px;
+    justify-content: center;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.menuIcones #mens {
+    max-width: 46px;
+    width: 43px !important;
+    height: 40px;
+    margin-top: 2px;
+    justify-content: center;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.menuIcones #music {
+    max-width: 46px;
+    width: 43px !important;
+    height: 40px;
+    margin-top: 2px;
+    justify-content: center;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+
+.tela5 {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.tela5::-webkit-scrollbar {
+    width: 5px;
+    background-color: black
+}
+
+.tela5::-webkit-scrollbar-thumb {
+    background-color: rgba(126, 122, 122, 0.425);
+    border-radius: 5px;
+    height: 30px;
+}
+
+.tela5 .edit {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit a {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 7px 10px;
+    text-decoration: none;
+    color: rgb(14, 105, 180);
+    font-size: 10px;
+}
+
+.edit img {
+    width: 12px;
+}
+
+.conversa {
+    font-family: Arial;
+    width: 60%;
+    font-size: 12px;
+}
+
+.pesquisar {
+    margin: 0 auto;
+    background-color: rgb(56, 56, 56);
+    width: 90%;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.pesquisar img {
+    margin-top: 5px;
+    width: 12px;
+}
+
+.pesquisar input {
+    background-image: url("https://i.ibb.co/1JJ0bTh/lupa-de-detetive-1.png");
+    background-position: 5px;
+    background-size: contain;
+    text-indent: 25px;
+    background-repeat: no-repeat;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.list-transmition {
+    width: 100%;
+    margin: 7px 0px;
+    display: flex;
+    font-size: 9px;
+    justify-content: space-between;
+}
+
+.list-transmition a {
+    margin: 5px 10px;
+    font-family: Arial;
+    text-decoration: none;
+    color: rgb(14, 105, 180);
+}
+
+.mensagens {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-bottom: solid 1px rgba(122, 122, 122, 0.486);
+}
+
+.mensagens2 {
+    height: 32px;
+}
+
+.mensagens .source {
+    width: 50px;
+    height: 50px;
+}
+
+.mensagens .source img {
+    margin: 4px auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.mensagens .whats {
+    margin-left: 0px;
+    font-family: Arial;
+    text-align: left;
+    width: 60%;
+}
+
+.mensagens .whats h2 {
+    font-size: 13px;
+    font-weight: revert;
+    justify-content: space-around;
+}
+
+.mensagens .whats p {
+    font-family: Arial;
+    color: rgba(214, 210, 210, 0.781);
+    font-size: 8px;
+}
+
+.dezesseis {
+    margin-top: 5px;
+    font-size: 5px;
+}
+
+.rodape {
+    background-color: rgba(29, 29, 29, 0.966);
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.rodape div {
+    width: 25%;
+    cursor: pointer;
+}
+
+.rodape div img {
+    margin-top: 7px;
+    width: 25px;
+}
+
+.conversaWhats img.imgConvWhats {
+    margin-top: 6px;
+    width: 45px;
+}
+
+.telephone .imgTelephone {
+    margin-top: 11px;
+    width: 18px;
+}
+
+#telaT {
+    background-color: rgba(112, 61, 61, 0.288);
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.musicas {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.localMusic {
+    background-color: rgba(199, 199, 199, 0.493);
+    width: 100%;
+    height: 150px;
+    margin: 35px auto 0 auto;
+    border-radius: 10px 10px 0px 0px;
+    border: solid 1px rgba(0, 0, 0, 0.021);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.781);
+}
+
+.localMusic img {
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.384);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.781);
+}
+
+.localMusic p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.icones {
+    margin: 0 auto;
+    background-color: rgba(160, 160, 160, 0.514);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    border: solid 1px rgba(0, 0, 0, 0.192);
+    box-shadow: 2px 5px 5px black;
+}
+
+.icones div {
+    margin-top: 9px;
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.icones img {
+    width: 20px;
+}
+
+.primeiroTexto {
+    margin: 10px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.primeiroTexto div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.primeiroTexto div span {
+    margin: 10px auto;
+}
+
+#log {
+    margin: 5px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+span {
+    font-size: 22px;
+    color: rgb(4, 39, 116);
+}
+
+div p {
+    font-size: 22px;
+}
+
+#ligar {
+    background-color: rgb(107, 173, 6);
+}
+
+#ligar img {
+    margin: 7px auto;
+    width: 30px;
+}
+
+#telinhadedigitacao {
+    margin: 15px auto;
+    width: 80%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#apagando img {
+    margin: 7px auto;
+    width: 30px;
+}
+
+.tela8 {
+    height: 200px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    animation-duration: 3s;
+    transition: 2s;
+}
+
+.telatotal8 {
+    background-image: linear-gradient(45deg, rgb(212, 212, 212), rgb(39, 107, 196));
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}
+
+.iconesTela8 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    background-color: rgba(46, 41, 41, 0.527);
+    width: 40%;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista li {
+    background-color: rgba(3, 3, 7, 0.178);
+    margin: 6px auto;
+    width: 38%;
+    list-style: none;
+    height: 28px;
+    border-radius: 300px;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+.icones2Tela8 {
+    margin: 10px auto;
+    background-color: rgba(46, 41, 41, 0.527);
+    width: 40%;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.lista2 {
+    margin-top: 35px;
+    display: flex;
+}
+
+.lista2 li {
+    background-color: transparent;
+    margin: 6px auto;
+    width: 26%;
+    list-style: none;
+    height: 20px;
+    border-radius: 300px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.lista2 li img {
+    width: 12px;
+    margin: 4px auto;
+}
+
+.musiq {
+    background-color: red;
+    width: 90%;
+    height: 10px;
+}
+
+#modoaviao {
+    background-color: white;
+}
+
+#modoaviao img {
+    margin: -1px;
+    width: 110%;
+}
+
+#sinalcelular {
+    background-color: black;
+}
+
+#wifiz {
+    background-color: black;
+}
+
+#wifiz img {
+    margin-left: -1px;
+}
+
+#blut {
+    background-color: black;
+}
+
+#blut img {
+    margin: 1px auto;
+}
+
+#sinalcelular img {
+    margin-top: 7px;
+    width: 60%;
+}
+
+.volaud {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#icones3Tela8 {
+    margin-top: -40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100px;
+    justify-content: space-around;
+}
+
+#volume, #brilho {
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 40%;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#volume {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#mais {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.308);
+}
+
+#menos {
+    border-top: solid 1px rgba(0, 0, 0, 0.308);
+}
+
+#mais, #menos {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.mylist {
+    filter: brightness(50%);
+}
+
+.teste {
+    display: block;
+}
+
+#desaparecerTela, #desaparecer {
+    width: 100%;
+    color: black;
+}
+
+#desaparecerTela p, #desaparecer p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: gray;
+    display: inline;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#menuMusic p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 30px auto;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.tela9 {
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.conversas {
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.robo {
+    height: 210px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    overflow: auto;
+}
+
+.balaoRobo, .balaoUser {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.balaoRobo {
+    background-color: rgb(195 144 144);
+}
+
+.bollon {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bollon div {
+    margin: 0px;
+    background-color: rgb(195 144 144);
+    color: black;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.bollon div p {
+    margin: 3px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+
+.botPrim {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.usuario {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.imprimirTexto {
+    margin: 10px;
+    color: black;
+    font-size: 12px;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.escrever {
+    margin-top: 280px;
+    background-color: white;
+    width: 185px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+}
+
+.conversas::-webkit-scrollbar {
+    width: 5px;
+    z-index: 10;
+    background-color: gray;
+}
+
+.conversas::-webkit-scrollbar-track {
+    background-color: ${lighten(0.2, '#374248')}; 
+}
+
+.conversas::-webkit-scrollbar-thumb {
+    background-color: #cccccc46;
+    border-radius: 5px;
+    height: 60px;
+    z-index: 10;
+}
+
+.conversas::-webkit-scrollbar-button {
+    background-color: $ {lighten(0.2, '#374248')}; height: 5px;
+}
+
+.conversas::-webkit-scrollbar-corner {
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+.escrever input {
+    width: 140px
+}
+
+.balaoRobo p {
+    margin: 2px;
+    font-size: 10px;
+    color: black;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+#userEscrita[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#userEscrita[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#coversaEbotUser {
+    width: 95%;
+}
+
+@media(max-width: 500px){
+.primeiroTexto{
+    text-align: center;
+}
+}
+
+#play img {
+    margin: 0 auto;
+}
+
+#telephone {
+    background-image: url("/Celular-main/assets/img/ligação.png");
+    background-size: cover;
+}
+
+#mens {
+    background-image: url("/Celular-main/assets/img/mensagens.png");
+    background-size: cover;
+}
+
+#whatsapp {
+    background-image: url("/Celular-main/assets/img/wha.png");
+    background-size: cover;
+}
+
+#music {
+    background-image: url("/Celular-main/assets/img/musicas.png");
+    background-size: cover;
+}
+
