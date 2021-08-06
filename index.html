@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Celular Web</title>
+        <link rel="stylesheet" href="assets/css/styleOne.css">
+    </head>
+
+    <body>
+
+<div class="texto">
+    <!-- Textos interativos -->
+    <div class="primeiroTexto" id="primeiroText" style="display: block;">
+        <div style="width: 100%;">
+            <h1>OLÁ, TUDO BEM?</h1>
+        </div>
+
+        <div class="scrol" style="display: block;">
+            <div id="log"></div>
+            <br>
+            <p>
+                Para começar, aperte o <span>botão do celular</span>
+            </p>
+        </div>
+
+        <div class="scrol" style="display: none;">
+            <div id="log1"></div>
+            <br>
+            <p>
+                Para começar, aperte o <span>botão do celular</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="primeiroTexto" id="segundoText" style="display: none;">
+        <div style="width: 100%;">
+            <h1>TELA DE SENHA:</h1>
+        </div>
+        <div class="scrol" style="display: block;">
+            <div id="log"></div>
+            <br>
+            <p>
+                Digite a senha: <span>943321</span>
+            </p>
+            <br>
+            <p>Se errar a senha, aperte em "Apagar" ou então "Cancelar".</p>
+        </div>
+    </div>
+
+    <div class="primeiroTexto" id="terceiroText" style="display: none;">
+        <div style="width: 100%;">
+            <h1>TELA INICIAL</h1>
+        </div>
+        <div class="scrol" style="display: block;">
+            <div id="log"></div>
+            <br>
+            <p>
+                Nessa Tela você poderá acessar as 
+                <span style="color: gray;">Configurações</span>, o
+                <span style="color: green;"> WhatsApp </span>, ouvir
+                <span style="color: red;"> Musicas!</span> Falar com o Robo no 
+                <span style="color: rgb(8, 53, 255);"> Chat!</span><br> Clicar na aba aonde fica as horas para
+                <span style="color: rgb(3, 3, 2);"> Abaixar o Brilho</span>
+            </p>
+            <br>
+            <p>
+                <br>Clique na aba de cima aonde fica os ícones: Wi-fi, Horas, Bateria<br> para que apareça uma tela ao qual você poderá <br>abaixar o brilho, aumentar/abaixar volume, mudar a música
+            </p>
+        </div>
+    </div>
+</div>
+
+        <section class="container">
+            <div class="celular">
+                <div class="carcaca">
+                    <div class="camera">
+                        <div class="sensor"></div>
+                        <div class="flashEsom">
+                            <div class="flash"></div>
+                            <div class="som"></div>
+                        </div>
+                    </div>
+
+                    <div class="tela" id="primeiratela">
+                        <!-- Primeira tela -->
+                        <div class="tela2" id="telaX" style="display: none;">
+                            <!-- Segunda tela / Senha -->
+                            <div class="login">
+                                <p>Digite a senha:</p>
+                                <input type="password" id="senha" min="1" max="6">
+                            </div>
+                            <div class="teclado">
+                                <div id="um">
+                                    <p>1</p>
+                                </div>
+                                <div id="dois">
+                                    <p>2</p>
+                                </div>
+                                <div id="tres">
+                                    <p>3</p>
+                                </div>
+                                <div id="quatro">
+                                    <p>4</p>
+                                </div>
+                                <div id="cinco">
+                                    <p>5</p>
+                                </div>
+                                <div id="seis">
+                                    <p>6</p>
+                                </div>
+                                <div id="sete">
+                                    <p>7</p>
+                                </div>
+                                <div id="oito">
+                                    <p>8</p>
+                                </div>
+                                <div id="nove">
+                                    <p>9</p>
+                                </div>
+                                <div id="zero">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                            <div class="cancelar">
+                                <p id="cancel">Cancelar</p>
+                                <p id="clear">Apagar</p>
+                            </div>
+                        </div>
+
+                        <div class="tela3" id="telaY" style="display: none">
+                            <!-- Terceira tela / Tela Principal-->
+                            <div class="imagem1">
+                                <div class="horas" id="horas">
+                                    <!-- Barra de horas, sinal e bateria -->
+                                    <img src="https://i.ibb.co/Qfnrg2Z/sinal.png" class="signal">
+                                    <span>DIWS</span>
+                                    <img src="https://i.ibb.co/THk0M1X/wifi-name.png" class="wifi">
+                                    <input id="hora-cons" value="13:30">
+                                    <img src="https://i.ibb.co/4MrKhB8/relogio.png" class="relogio">
+                                    <span>100%</span>
+                                </div>
+
+                                <div style="display: flex;">
+                                    <div class="imagem2" id="configuration">
+                                        <img src="https://i.ibb.co/QP2Qmjm/conif.png" alt="" class="config" title="Configuração">
+                                    </div>
+                                    <div class="imagem3" id="chat">
+                                        <img src="assets/img/Rafiqul-Hassan-Blogger-Chat-2.ico" alt="" class="chat" title="Chat Bot">
+                                    </div>
+
+                                </div>
+
+                                <div class="menuIcones">
+                                    <!-- Icones -->
+                                    <div  id="telephone">
+                                    </div>
+                                    <div id="mens">   
+                                    </div>
+                                    <div id="whatsapp">   
+                                    </div>
+                                    <div class="imagem4" id="music"> 
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tela4" id="telaZ" style="display: none;">
+                            <!-- Quarta tela / Configurações -->
+                            <div class="ajustes">
+                                <h1>Ajustes</h1>
+                                <div class="icloud">
+                                    <div class="minhafoto">
+                                        <div class="imagemDoIcloud">
+                                            <img src="https://i.ibb.co/D51WZxL/eu.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="textConfig">
+                                        <h4>Dennis Silva</h4>
+                                        <p>ID Apple, iCloud, Mídia e Compras</p>
+                                    </div>
+                                    <div class="next">></div>
+                                </div>
+                            </div>
+
+                            <div class="primeirasOption">
+                                <div>
+                                    <li>
+                                        <a href="#">Modo Avião</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Wi-Fi</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Bluetooth</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Celular</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#" style="border: none;">Acesso Pessoal</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="segundaOption">
+                                <div>
+                                    <li>
+                                        <a href="#">Notificações</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Sons</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Não pertube</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#" style="border: none;">Tempo de Uso</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="terceiraOption">
+                                <div>
+                                    <li>
+                                        <a href="#">Geral</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Central de Controle</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Tela e Brilho</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Tela de Início</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Acessibilidade</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Imagem de Fundo</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Siri e Busca</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Touch ID e Código</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">SOS de Emergência</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Notificações de Exposição</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#">Bateria</a>
+                                    </li>
+                                </div>
+                                <div>
+                                    <li>
+                                        <a href="#" style="border: none;">Privacidade</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tela5" id="telaW" style="display: none;">
+                            <!-- Quinta tela / Whatsapp -->
+                            <div class="edit">
+                                <a href="#">Editar</a>
+                                <a href="#">
+                                    <img src="https://i.ibb.co/y4pCZxx/edit2-icon-icons-com-61199.png" alt="">
+                                </a>
+                            </div>
+                            <div class="conversasWhats">
+                                <div class="conversa">
+                                    <h1>Conversas</h1>
+                                </div>
+                                <div class="pesquisar">
+                                    <input type="search" placeholder="Pesquisar">
+                                </div>
+                                <div class="list-transmition">
+                                    <a href="#">Listas de Trasmissão</a>
+                                    <a href="#">Novo Grupo</a>
+                                </div>
+                                <div class="mensagens" style="border-top: solid 1px rgba(122, 122, 122, 0.486);">
+                                    <div class="source">
+                                        <img src="https://i.ibb.co/v10WfFD/Whats-App-Image-2021-07-23-at-16-33-25.jpg" class="one">
+                                    </div>
+                                    <div class="whats">
+                                        <h2>João</h2>
+                                        <p>Tamo Junto, parceiro</p>
+                                    </div>
+                                    <div class="dezesseis">
+                                        <h2>16:40</h2>
+                                    </div>
+                                </div>
+                                <div class="mensagens">
+                                    <div class="source">
+                                        <img src="https://i.ibb.co/7Kdhb6V/Whats-App-Image-2021-07-24-at-12-16-01.jpg" class="two">
+                                    </div>
+                                    <div class="whats">
+                                        <h2>Desenvolver</h2>
+                                        <p>Projeto em Andamento</p>
+                                    </div>
+                                    <div class="dezesseis">
+                                        <h2>17:30</h2>
+                                    </div>
+                                </div>
+                                <div class="mensagens">
+                                    <div class="source">
+                                        <img src="https://i.ibb.co/k4h5rrh/Whats-App-Image-2021-07-24-at-12-17-16.jpg" class="tree">
+                                    </div>
+                                    <div class="whats">
+                                        <h2>Empresa</h2>
+                                        <p>Amanhã quem sabe</p>
+                                    </div>
+                                    <div class="dezesseis">
+                                        <h2>10:20</h2>
+                                    </div>
+                                </div>
+                                <div class="mensagens2"></div>
+                                <div class="rodape">
+                                    <div>
+                                        <img src="https://i.ibb.co/yk25Q7L/icone-cercle-gris.png">
+                                    </div>
+                                    <div class="telephone">
+                                        <img src="https://i.ibb.co/DwL4X0D/151-1517886-icone-telefone-cinza-png-phone-clip-art.png" class="imgTelephone">
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/9yNNT0R/icono-de-camara-gris.png">
+                                    </div>
+                                    <div class="conversaWhats">
+                                        <img src="https://i.ibb.co/nbLQ1dw/conversa.png" class="imgConvWhats">
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/FBycM7q/gear-1119302-960-720.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tela6" id="telaT" style="display: none;">
+                            <!-- Sexta tela / Musicas -->
+                            <div class="musicas">
+                                <div class="localMusic">
+                                    <audio src="assets/music/lofi songs for slow days_160k.mp3" id="musica1"></audio>
+                                    <audio src="assets/music/Rihanna - You Da One_160k.mp3" id="musica2"></audio>
+                                    <img src="https://i.pinimg.com/originals/c3/61/f0/c361f0b3bb3d7d3687a0a3e31ea48caa.gif" id="oneMusic" style="display: block;">
+                                    <img src="https://i.pinimg.com/originals/d7/dd/06/d7dd0623321ca8ede09799c25cd2c60a.gif" id="secondMusic" style="display: none;">
+                                    <p>Best Lofi Songs...</p>
+                                </div>
+
+                                <div class="icones">
+                                    <div id="retroceder">
+                                        <img src="https://i.ibb.co/YcmCYsc/retroceder.png" alt="">
+                                    </div>
+                                    <div id="play">
+                                        <img src="https://i.ibb.co/yPPfcbJ/botao-play.png" alt="" id="played" style="display: block;">
+                                        <img src="assets/img/pausa.png" id="paused" style="display: none;"> 
+                                    </div>
+                                    <div id="avancar">
+                                        <img src="https://i.ibb.co/hDmpXDJ/forward.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menuMusic">
+                                <p>Aperte para aparecer o Menu para abaixar/aumentar Volume</p>
+                            </div>
+                        </div>
+
+                        <div class="tela7" id="telaA" style="display: none;">
+                            <!-- Sétima tela / Ligações -->
+                            <div>
+                                <input type="number" id="telinhadedigitacao" min="1" max="20">
+                            </div>
+                            <div class="teclado">
+                                <div id="numeroum">
+                                    <p>1</p>
+                                </div>
+                                <div id="numerodois">
+                                    <p>2</p>
+                                </div>
+                                <div id="numerotres">
+                                    <p>3</p>
+                                </div>
+                                <div id="numeroquatro">
+                                    <p>4</p>
+                                </div>
+                                <div id="numerocinco">
+                                    <p>5</p>
+                                </div>
+                                <div id="numeroseis">
+                                    <p>6</p>
+                                </div>
+                                <div id="numerosete">
+                                    <p>7</p>
+                                </div>
+                                <div id="numerooito">
+                                    <p>8</p>
+                                </div>
+                                <div id="numeronove">
+                                    <p>9</p>
+                                </div>
+                                <div id="asteristico">
+                                    <p>*</p>
+                                </div>
+                                <div id="numerozero">
+                                    <p>0</p>
+                                </div>
+                                <div id="apagando">
+                                    <img src="https://i.ibb.co/KxLJsrB/erase.png" alt="">
+                                </div>
+                                <div id="ligar">
+                                    <img src="https://i.ibb.co/DDyPHkg/phone.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tela8" id="tela8" style="display: none;">
+                            <div class="telatotal8" id="telatotal8">
+                                <div class="iconesTela8">
+                                    <ul class="lista">
+                                        <li id="modoaviao">
+                                            <img src="assets/img/aviao.png" alt="">
+                                        </li>
+                                        <li id="sinalcelular">
+                                            <img src="assets/img/beiço.png" alt="">
+                                        </li>
+                                        <li id="wifiz">
+                                            <img src="assets/img/o beiço atividade para normal .png" width="30px">
+                                        </li>
+                                        <li id="blut">
+                                            <img src="assets/img/beiço 2 o retorno.png" width="25px">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="icones2Tela8">
+                                    <ul class="lista2">
+                                        <li>
+                                            <img src="https://i.ibb.co/YcmCYsc/retroceder.png" id="antes">
+                                        </li>
+                                        <li>
+                                            <img src="https://i.ibb.co/yPPfcbJ/botao-play.png" id="parar">
+                                        </li>
+                                        <li>
+                                            <img src="https://i.ibb.co/hDmpXDJ/forward.png" id="proximo">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="volaud">
+                                    <div id="icones3Tela8">
+                                        <div id="brilho"></div>
+                                        <div id="volume">
+                                            <div id="mais">+</div>
+                                            <div id="menos">-</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="desaparecerTela">
+                                    <p>Abaixar tela</p>
+                                </div>
+                                <div id="desaparecer" style="display: none;">
+                                    <p>Abaixar tela</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tela9" id="tela9" style="display: none;">
+                            <div class="conversas" id="conversas">
+                                <div class="robo" id="robo">
+                                    <div class="balaoRobo" id="balaoRobo">
+                                        <p>Olá, tudo bem? Quer ler a explicação sobre o celular?</p>
+                                        <p>1 - Expl.Senha </p>
+                                        <br>
+                                        <p>2 - Expl.Configurações</p>
+                                        <br>
+                                        <p>3 - Expl.Musicas</p>
+                                        <br>
+                                        <p>4 - Expl.ChatBot</p>
+                                        <br>
+                                        <p>5 - Expl.WhatsApp</p>
+                                        <br>
+                                        <p>6 - Expl.Tela De Rolagem</p>
+                                        <br>
+                                        <p>7 - Expl.Ligações</p>
+                                        <br>
+                                        <p>8 - Limpar Tela</p>
+                                    </div>
+                                </div>
+
+                                <div id="coversaEbotUser"></div>
+                                <form class="escrever" id="form">
+                                    <input type="number" id="userEscrita">
+                                    <input type="submit" name="Enviar" id="enviar">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="botao">
+                        <!-- Botão principal -->
+                        <button id="apertar"></button>
+                    </div>
+                </div>
+            </div>
+
+
+</section>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
